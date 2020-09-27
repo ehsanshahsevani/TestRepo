@@ -26,6 +26,7 @@ namespace TestGit
             F1 Pow = () => { Console.WriteLine(Math.Pow(2 , 8)); };
 
             NewClass newClass = new NewClass(15, "ehsan", "Shahsevani");
+            Console.WriteLine("{0}: {1} {2}",newClass.Id,newClass.Name,newClass.LastName);
         }
     }
 }
