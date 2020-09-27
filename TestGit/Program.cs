@@ -4,6 +4,8 @@ namespace TestGit
 {
     class Program
     {
+        public delegate void F1();
+
         static void Main(string[] args)
         {
             Cusomer cusomer = new Cusomer()
@@ -17,6 +19,10 @@ namespace TestGit
             order.Id = 12;
             Console.WriteLine("{0} : {1} - {2} Id Customer : {3}",order.Id,cusomer.Name,cusomer.Family,cusomer.Id);
 
+            F1 Sum = () => { Console.WriteLine(2 + 8); };
+            F1 Sub = () => { Console.WriteLine(2 - 8); };
+            F1 Mul = () => { Console.WriteLine(2 * 8); };
+            F1 Pow = () => { Console.WriteLine(Math.Pow(2 , 8)); };
         }
     }
 }
