@@ -1,4 +1,5 @@
 ﻿using System;
+using TestGit.files;
 
 namespace TestGit
 {
@@ -23,6 +24,8 @@ namespace TestGit
             F1 Sub = () => { Console.WriteLine(2 - 8); };
             F1 Mul = () => { Console.WriteLine(2 * 8); };
             F1 Pow = () => { Console.WriteLine(Math.Pow(2 , 8)); };
+
+            NewClass newClass = new NewClass(15, "ehsan", "Shahsevani");
         }
     }
 }
